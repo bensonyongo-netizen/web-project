@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Submission Form</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Information Submission Form</h1>
+    <p class="small">Part 5a: Form &rarr; process page &rarr; database insert.</p>
+    <form action="process.php" method="post" autocomplete="on" novalidate>
+      <label for="full_name">Full Name</label>
+      <input id="full_name" name="full_name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" />
+
+      <label for="program">Programme</label>
+      <select id="program" name="program" required>
+        <option value="">-- Select --</option>
+        <option>ICT</option>
+        <option>Computer Science</option>
+        <option>Data Management</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message here..."></textarea>
+
+      <input type="submit" value="Submit" class="button" />
+      <p class="small">After submission, you’ll see a success page.</p>
+    </form>
+    <hr/>
+    <p><a href="../index.html">&larr; Back to Home</a></p>
+  </main>
+</body>
+</html>

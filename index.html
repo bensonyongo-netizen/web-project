@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benson Yongo — Home</title>
+  <meta name="description" content="Personal homepage and project hub for OIT 237 Web Programming." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 style="text-align:center;">BENSON YONGO</h1>
+      <p class="tagline">MWANAFUNZI WA MWAKA WA PILI KATIKA  CHUO KIKUU HURIA TAWI LA MKOA WA TANGA</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="inner container">
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#links">Favorite Links</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#schedule">Study Schedule</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Personal Info</h2>
+      <div class="grid-2">
+        <div>
+          <p>Hello! I’m <strong>BENSON YONGO</strong> from <em>Dar es Salaam, Tanzania</em>. I study Web Programming (OIT 237) and enjoy building clean, accessible websites.</p>
+          <p>On this page you’ll find internal links (like the navigation above) and external links (to useful resources) as required. You’ll also see text formatting, images, a table, and a JavaScript footer showing the page <span class="badge">location</span> and <span class="badge">last modified</span> time.</p>
+          <blockquote>“Education is the most powerful weapon which you can use to change the world.” — Nelson Mandela</blockquote>
+        </div>
+        <figure>
+          <img src="assets/images/NEMBO TAIFA.png" alt="NEMBO TAIFA" />
+          <figcaption class="small">NEMBO TAIFA.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <p>I love <strong>coding</strong>, football, and photography. When I’m not studying, I explore new tech tools and contribute to small web projects for friends and family.</p>
+      <p>Recently, I started organizing my notes into reusable templates and simple JavaScript utilities.</p>
+      <div class="grid-2">
+        <figure>
+          <img src="assets/images/NEMBO TAIFA.png" alt="Hobby snapshot placeholder" />
+          <figcaption class="small">NEMBO YA TAIFA.</figcaption>
+        </figure>
+        <div>
+          <ul>
+            <li>Top programming languages I use: HTML, CSS, JavaScript, PHP</li>
+            <li>Favorite football clubs: (add yours!)</li>
+            <li>Top-three tools: VS Code, Git, Chrome DevTools</li>
+          </ul>
+          <p class="small">List included per assignment requirement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2>Favorite Links</h2>
+      <p>Here are some helpful links. Notice how one of the links appears naturally in a sentence: I regularly validate my HTML with the <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a> to keep the code clean.</p>
+      <ol>
+        <li><a href="https://www.out.ac.tz/" target="_blank" rel="noopener">The Open University of Tanzania</a></li>
+        <li><a href="https://www.out.ac.tz/faculty_category/department-of-ict/" target="_blank" rel="noopener">OUT — Department of ICT</a></li>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://www.php.net/manual/en/" target="_blank" rel="noopener">PHP Manual</a></li>
+        <li><a href="https://coict.udsm.ac.tz/" target="_blank" rel="noopener">CoICT — University of Dar es Salaam</a></li>
+      </ol>
+      <p class="small">At least five links are provided, including OUT and the ICT Department.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="assets/images/profile.png" alt="Local gallery image 1" />
+        <img src="assets/images/hobby.png" alt="Local gallery image 2" />
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Study Schedule (Table)</h2>
+      <table aria-describedby="table-note">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Focus</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mon</td>
+            <td>HTML &amp; CSS</td>
+            <td>
+              Semantic HTML5 elements; practice forms and tables.<br/>
+              Multi‑line cell content to satisfy assignment requirement.
+            </td>
+          </tr>
+          <tr>
+            <td>Tue</td>
+            <td>JavaScript</td>
+            <td>DOM basics; events; update footer with <code>document.lastModified</code>.</td>
+          </tr>
+          <tr>
+            <td>Wed</td>
+            <td>PHP &amp; MySQL</td>
+            <td>Build the form (Part 5), process with PDO prepared statements.</td>
+          </tr>
+          <tr>
+            <td>Thu</td>
+            <td>Refactor</td>
+            <td>Clean code; pass W3C validation; improve accessibility.</td>
+          </tr>
+          <tr>
+            <td>Fri</td>
+            <td>Deployment</td>
+            <td>Upload to hosting; export SQL; final checks.</td>
+          </tr>
+        </tbody>
+        <caption id="table-note">Some rows contain more than one line.</caption>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact &amp; Forms</h2>
+      <p>For the database form part of this assignment, go to the <a class="button" href="forms/form.html">Submission Form</a>. After submitting, an authenticated user can view records at <a class="button secondary" href="forms/retrieve.php">Retrieve Records</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer-info" class="container small">Loading page info…</div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
